@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox">
+    <title>Document</title>
+</head>
+<body>
+    
+      
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Boostrap</a>
+                </div>
+            </div>
+          </nav>
+
+          <div class="container">
+              <div class="row">
+                  <div col-lg-12>
+                        <div class="col-lg-12">
+                             <h2 class="page-header">Gallery</h2>
+                        </div>
+                  </div>
+              </div>
+              
+              <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <a class="thumbnail" href="#">
+                          <img class="img-responsive" src="assets/img/1.png" alt="">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <a class="thumbnail" href="#">
+                            <img class="img-responsive" src="assets/img/2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <a class="thumbnail" href="#">
+                                <img class="img-responsive" src="assets/img/3.png" alt="">
+                            </a>
+                   </div>
+
+
+
+              </div>
+               
+              <div class= "modal fade" role="dialog" id="joes">
+                   <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="" alt="" id="model-img" height="100%" width="100%">
+                            </div>
+                        </div>
+                   </div>
+              </div>
+
+
+              <footer>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <p>Copyright &copy</p>
+                      </div>
+                  </div>
+              </footer>
+            </div>
+      
+
+   <script>
+   $(document).ready(function(){
+       $('.popupimage').click(function(event){
+           event.preventDefault();
+           $('.modal img').attr('src',$(this).attr('href'))
+           $('.modal').modal('show');
+        });
+   });
+   </script>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/lightbox.js"></script>
+     
+
+
+      
+</body>
+</html>
